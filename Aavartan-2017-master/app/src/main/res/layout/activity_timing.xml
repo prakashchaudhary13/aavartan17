@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/image"
+    tools:context="com.technocracy.app.aavartan.activity.TimingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/title"
+        android:backgroundTint="@color/lightback"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title"
+        android:layout_below="@+id/toolbar"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightback"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/nav_item_colors"
+            app:itemTextColor="@drawable/nav_item_colors"
+            app:menu="@menu/menu_bottom_navigation" />
+        </RelativeLayout>
+
+
